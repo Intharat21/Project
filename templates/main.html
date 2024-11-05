@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material List</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+            <div class="logo">
+                <a href="{{ url_for('main') }}">
+                    <img src="{{ url_for('static', filename='image/images.png') }}" alt=""  style="width: 100px; margin: 0 1rem;">
+                </a>
+            </div>
+                
+            <ul class="menu">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="#">Portfolio</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+            <div class="signin">
+                <li><a href="#">Sign in</a></li>
+            </div>
+            
+        </div>
+        </div>
+    </nav>
+    <section class="main">
+        <img src="{{ url_for('static', filename='image/02.jpg') }}" alt="" style="width: 100%; background-repeat: repeat-x;">
+        <a href="{{ url_for('index') }}" class="">
+        <section id="card1" class="card">
+            <img src="{{ url_for('static', filename='image/04.jpg') }}" alt="" style="width: 100%; background-repeat: repeat-x;">
+                <div class="card__content">
+                    <p class="card__title">Material List</p>
+                        <p class="card__description">
+                            This website is designed for adding, searching, and managing materials for the Faculty of Dentistry.
+              </p>
+            </div>
+          </section></a>
+    </section>
+
+    
+
+</body>
+</html>
